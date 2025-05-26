@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+      .container2 {
+        width: 270px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      /* 3-17 */
+      .container3 {
+        border: solid 1px black;
+        display: grid;
+        height: 200px;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 2fr;
+        gap: 10px;
+      }
+
+      .item {
+        padding: 2px;
+        background-color: darkolivegreen;
+        font-size: x-large;
+      }
+      .size1 {
+        height: 20px;
+      }
+      .size2 {
+        height: 40px;
+      }
+      .size3 {
+        height: 60px;
+      }
+      .size4 {
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="item size1">item1</div>
+      <div class="item size2">item2</div>
+      <div class="item size3">item3</div>
+      <div class="item size4">item4</div>
+    </div>
+    <div class="container2">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <div class="container3">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+    </div>
+    <div class="container4">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+    </div>
+  </body>
+</html>
